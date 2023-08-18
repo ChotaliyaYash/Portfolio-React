@@ -1,4 +1,5 @@
 import React from 'react'
+import data from '../utils/url'
 
 const Contact = () => {
     return (
@@ -17,7 +18,7 @@ const Contact = () => {
                 </div>
 
                 <div className='flex justify-center items-center'>
-                    <form action="https://getform.io/f/d34ef2ce-3293-4dd5-af7b-ae41624b1529" className='flex flex-col w-full md:w-1/2' method='POST'>
+                    <form action={data.contactAction} className='flex flex-col w-full md:w-1/2' method='POST'>
                         <input type="text" name='name' placeholder='Enter your name' className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none' />
 
                         <input type="text" name='email' placeholder='Enter your email' className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none my-4' />

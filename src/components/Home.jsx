@@ -3,7 +3,8 @@ import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 import { Link } from 'react-scroll'
 import { Typewriter } from 'react-simple-typewriter'
 
-import Profile from '../assets/profile.jpeg'
+// import Profile from '../assets/profile.jpeg'
+import Profilee from '../assets/prof.jpg'
 
 const Home = () => {
 
@@ -47,7 +48,7 @@ const Home = () => {
 
                 {/* image */}
                 <div className='md:w-1/2 flex items-center w-1/2 h-full justify-center p-2'>
-                    <img src={Profile} alt="myImage" className='rounded-2xl mx-auto md:w-2/3 object-cover' />
+                    <img src={Profilee} alt="myImage" className='rounded-2xl mx-auto md:w-2/3 object-cover' />
                 </div>
             </div>
         </div>

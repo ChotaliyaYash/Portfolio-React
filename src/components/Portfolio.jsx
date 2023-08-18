@@ -1,24 +1,26 @@
 import React from 'react'
 
-import Demo from '../assets/demoPort.jpeg'
+import Ecommerce from '../assets/ecommerce.png'
+import Food from '../assets/food.avif'
+import Portfolio0 from '../assets/portfolio.png'
 
 const Portfolio = () => {
 
     const links = [
         {
             id: 1,
-            src: Demo,
-            href: '',
+            src: Ecommerce,
+            href: 'https://github.com/ChotaliyaYash/E-commerce-React-Node',
         },
         {
             id: 2,
-            src: Demo,
-            href: '',
+            src: Food,
+            href: 'https://github.com/ChotaliyaYash/FoodDelivery---Flutter',
         },
         {
             id: 3,
-            src: Demo,
-            href: '',
+            src: Portfolio0,
+            href: 'https://github.com/ChotaliyaYash/Portfolio-React',
         },
     ]
 
@@ -41,7 +43,7 @@ const Portfolio = () => {
 
                     {links.map((linker) => (
                         <div className='shadow-md shadow-gray-600 rounded-lg' key={linker.id}>
-                            <img src={linker.src} alt="" className='rounded-md duration-200 hover:scale-105 object-cover' />
+                            <img src={linker.src} alt="" className='rounded-md duration-200 hover:scale-105 object-cover h-56' />
 
                             <div className='flex items-center justify-center'>
                                 <a href={linker.href} target='_blank' rel='noreferrer' className='w-1/2 px-6 m-2 duration-200 hover:scale-105 flex justify-center items-center'>Code</a>
